@@ -48,11 +48,34 @@
 
     </div>
     <div class="row">
-      <div class="col">
+      <div class="col mb-3">
         <form>
           <input class="btn btn-primary" type="button" name="button1" value="Zoek het voor me uit" onclick="document.getElementById('output1').value = getGrade()">
           </input>
           <input class='ml-5' id="output1" type="text" value="">
+          </input>
+        </form>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <div class="mt-5 text-justify">
+          <p>
+            Ik ben er bijna. Geef me een cijfer tussen <input maxlength="1" size="2" id="low" type="text" value="">
+          </input> en <input maxlength="2" size="2" id="upp" type="text" value="">
+        </input>.
+          </p>
+        </div>
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col">
+        <form>
+          <input class="btn btn-primary" type="button" name="button1" value="Zoek het voor me uit" onclick="document.getElementById('output2').value = getGrade2()">
+          </input>
+          <input class='ml-5' id="output2" type="text" value="">
           </input>
         </form>
       </div>

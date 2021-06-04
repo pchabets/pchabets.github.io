@@ -1,8 +1,20 @@
 function getGrade(){
   var grade = randomTruncSkewNormal({
     range: [1,10],
-    mean: 7.5,
+    mean: 7,
     stdDev: 1
+  })
+  var gradeRounded = Math.round(grade*10)/10
+  return gradeRounded
+}
+
+function getGrade2(){
+  var low = parseFloat(document.getElementById('low').value);
+  var upp = parseFloat(document.getElementById('upp').value);
+  var grade = randomTruncSkewNormal({
+    range: [low,upp],
+    mean: (upp+low)/2,
+    stdDev: (upp-low)/2
   })
   var gradeRounded = Math.round(grade*10)/10
   return gradeRounded
