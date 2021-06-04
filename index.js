@@ -8,21 +8,6 @@ function getGrade(){
   return gradeRounded
 }
 
-
-
-
-
-document.addEventListener("keypress", function(event) {
-  var grade = randomTruncSkewNormal({
-    range: [1,10],
-    mean: 7.5,
-    stdDev: 1
-  })
-  var gradeRounded = Math.round(grade*10)/10
-  console.log(gradeRounded);
-
-});
-
 function randomTruncSkewNormal({
   rng = Math.random,
   range = [-Infinity, Infinity],
